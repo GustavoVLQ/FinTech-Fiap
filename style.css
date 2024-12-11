@@ -1,0 +1,248 @@
+* {
+    font-family: 'Roboto';
+}
+
+.wrap-cell {
+    margin: 0px 25px;
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: column; /* Organiza os elementos na vertical */
+    justify-content: flex-end; /* Move os elementos para o final da página */
+    height: 100vh; /* Garante que a altura ocupe toda a tela */
+    padding-bottom: 50px;
+}
+
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#name-logo {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#name {
+    margin: 3px 0px 0px 10px;
+}
+
+#name2 {
+    margin: 3px 0px 0px 0px;
+    font-weight: 400;
+}
+
+#logo {
+    background-color: #8F9CAF;
+    height: 48px;
+    width: 48px;
+    border-radius: 48px;
+}
+
+#slogan {
+    margin-bottom: 15px;
+}
+
+#description {
+    font-weight: 400;
+    color: #A1ACB4;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    height: 65px;
+    border-radius: 65px;
+    border-style: none;
+    font-size: 24;
+}
+
+#enter {
+    background-color: #0887FC;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#register {
+    background-color: #EEEDF1;
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+@media (min-width: 950px) {
+    .wrap-cell {
+        display: none;
+    }
+
+    .wrap-pc {
+        display: flex;
+    }
+    
+    #form-pc {
+        display: block;
+
+        margin: 48px 48px;
+        width: 100vh;
+    }
+
+    #img {
+        width: 68.33%;
+        height: 100vh;
+    }
+
+    #text-pc {
+        color: #1A1A1A;
+        font-size: 20;
+        font-weight: 500;
+        margin-top: 48px;
+        margin-bottom: 24px;
+    }
+
+
+    label {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0px 0px 8px 16px;
+    }
+
+    input {
+        width: 100%;
+        height: 48px;
+        border: 0.5px solid #E5E5E5;
+        border-radius: 6px;
+        padding-left: 16px;
+        background-color: #f0f0f0;
+    }
+
+    #inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .form-check.form-switch {
+        display: flex;
+    }
+
+    #switch-check {
+        width: 40px;
+        height: 20px;
+    }
+
+    #switch-check:hover {
+        cursor: pointer;
+    }
+
+    .form-check-label {
+        margin: 0px 0px 0px 8px;
+    }
+
+    #lil-text p {
+        font-size: 12px;
+        color: #007AFF;
+        margin: 0px;
+        padding-top: 5px;
+    }
+
+    #lil-text p:hover {
+        color: #076ac6;
+        cursor: pointer;
+    }
+
+    #lil-text label {
+        padding-top: 2px;
+    }
+
+
+    #lil-text {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    button {
+        height: 40px;
+        border-radius: 6px;
+        border-style: none;
+        font-size: 24;
+    }
+
+    #enter {
+        background-color: #0887FC;
+        color: white;
+        font-weight: 700;
+        font-size: 15px;
+        margin: 32px 0px 64px 0px;
+        transition: background-color 0.5s ease, transform 0.5s ease;
+    }
+
+    #enter:hover {
+        background-color: #076ac6;
+        transform: scale(1.025);
+    }
+
+    #w-google {
+        background-color: #333333;
+        color: white;
+        font-weight: 400;
+        font-size: 12px;
+        transition: background-color 0.5s ease, transform 0.5s ease;
+    }
+
+    #w-google:hover {
+        background-color: #191919;
+        transform: scale(1.025);
+    }
+
+    #w-google img {
+        margin-right: 8px;
+    }
+
+    #creat-account {
+        text-align: center;
+        margin-top: 24px;
+    }
+
+    #creat-account h1 {
+        display: inline;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    #part1 {
+        color: #1A1A1A;
+    }
+
+    #creat {
+        color: #0887FC;
+    }
+
+    #creat:hover {
+        color: #076ac6;
+        cursor: pointer;
+    }
+
+    footer {
+        margin-top: 224px;
+    }
+
+    footer p {
+        color: #666666;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 949px) {
+    .wrap-pc {
+        display: none;
+    }
+}
